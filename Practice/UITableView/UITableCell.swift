@@ -33,11 +33,15 @@ extension TableCell{
     func setContent(_ index: IndexPath){
         ///tableView안에 있는 textLabel, detailTextLabel, imageView를 사용하기 위해서
         ///defaultContentConfig를 사용한다.
+        
         var content = defaultContentConfiguration()
         
         content.text = "\(index)"
         
+        content.image = UIImage(systemName: "square.and.arrow.up")
+        content.imageProperties.tintColor = .gray
         contentConfiguration = content
+
     }
     
     func setBackground(){

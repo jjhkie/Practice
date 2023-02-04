@@ -15,6 +15,7 @@ final class TableViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         
         attribute()
         layout()
@@ -23,7 +24,13 @@ final class TableViewController: UIViewController{
 
 extension TableViewController{
     private func attribute(){
+        //밑줄 제거
+        tableView.separatorStyle = .none
+        
         tableView.register(TableCell.self, forCellReuseIdentifier: "Cell")
+        
+        tableView.register(UITableHeader.self, forHeaderFooterViewReuseIdentifier: "Header")
+        
     }
     
     private func layout(){
@@ -42,8 +49,12 @@ extension TableViewController: UITableViewDataSource{
         7
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableCell else {return UITableViewCell()}
+        
+     
         
         cell.setContent(indexPath)
         cell.setBackground()
@@ -51,4 +62,21 @@ extension TableViewController: UITableViewDataSource{
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let view =    tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as? UITableHeader else { return UIView()}
+        
+        return view
+    }
+}
+
+extension TableViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.row == 0){
+            return 150
+        }
+        return 70
+    }
+    
+    
 }

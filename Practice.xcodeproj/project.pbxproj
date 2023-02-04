@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B931D1502952B02E002B3F1D /* UITableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B931D14F2952B02E002B3F1D /* UITableHeader.swift */; };
 		B95BAB042950610B004D6306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95BAB032950610B004D6306 /* AppDelegate.swift */; };
 		B95BAB062950610B004D6306 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95BAB052950610B004D6306 /* SceneDelegate.swift */; };
 		B95BAB0D2950610C004D6306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95BAB0C2950610C004D6306 /* Assets.xcassets */; };
@@ -18,9 +19,12 @@
 		B9670C3E29514F8700616BC5 /* UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C3D29514F8700616BC5 /* UITableCell.swift */; };
 		B9670C4129514FDF00616BC5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B9670C4029514FDF00616BC5 /* SnapKit */; };
 		B9670C432951507F00616BC5 /* swiftUIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C422951507F00616BC5 /* swiftUIData.swift */; };
+		B96CFB85298E2B2F00AD16F4 /* UISegmentedControlPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CFB84298E2B2F00AD16F4 /* UISegmentedControlPr.swift */; };
+		B96CFB88298E397900AD16F4 /* UISegmentControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CFB87298E397900AD16F4 /* UISegmentControl+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B931D14F2952B02E002B3F1D /* UITableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableHeader.swift; sourceTree = "<group>"; };
 		B95BAB002950610B004D6306 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95BAB032950610B004D6306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95BAB052950610B004D6306 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		B9670C3A29514F6800616BC5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B9670C3D29514F8700616BC5 /* UITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableCell.swift; sourceTree = "<group>"; };
 		B9670C422951507F00616BC5 /* swiftUIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIData.swift; sourceTree = "<group>"; };
+		B96CFB84298E2B2F00AD16F4 /* UISegmentedControlPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlPr.swift; sourceTree = "<group>"; };
+		B96CFB87298E397900AD16F4 /* UISegmentControl+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentControl+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				B95BAB0E2950610C004D6306 /* LaunchScreen.storyboard */,
 				B95BAB112950610C004D6306 /* Info.plist */,
 				B9670C422951507F00616BC5 /* swiftUIData.swift */,
+				B96CFB86298E395600AD16F4 /* UISegmentControl */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -101,8 +108,18 @@
 			children = (
 				B9670C3A29514F6800616BC5 /* TableViewController.swift */,
 				B9670C3D29514F8700616BC5 /* UITableCell.swift */,
+				B931D14F2952B02E002B3F1D /* UITableHeader.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		B96CFB86298E395600AD16F4 /* UISegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				B96CFB84298E2B2F00AD16F4 /* UISegmentedControlPr.swift */,
+				B96CFB87298E397900AD16F4 /* UISegmentControl+.swift */,
+			);
+			path = UISegmentControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +200,11 @@
 			files = (
 				B9670C3E29514F8700616BC5 /* UITableCell.swift in Sources */,
 				B9670C432951507F00616BC5 /* swiftUIData.swift in Sources */,
+				B96CFB88298E397900AD16F4 /* UISegmentControl+.swift in Sources */,
 				B95BAB18295061C1004D6306 /* NavigationBarController.swift in Sources */,
 				B95BAB1B295071D5004D6306 /* UINavigationController+.swift in Sources */,
+				B96CFB85298E2B2F00AD16F4 /* UISegmentedControlPr.swift in Sources */,
+				B931D1502952B02E002B3F1D /* UITableHeader.swift in Sources */,
 				B95BAB1E29507A95004D6306 /* UINavigationItem+.swift in Sources */,
 				B95BAB042950610B004D6306 /* AppDelegate.swift in Sources */,
 				B95BAB062950610B004D6306 /* SceneDelegate.swift in Sources */,
