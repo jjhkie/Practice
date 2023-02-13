@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import SwiftUI
 
 final class NavigationBarController: UIViewController{
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -18,20 +18,17 @@ final class NavigationBarController: UIViewController{
 
 extension NavigationBarController{
     func attribute(){
-        navigationController?.setBackgroundColor()
-        navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.topItem?.title = "title"
-        let writeButton = self.navigationItem.makeSFSymbolButton(self,
-                                                                     action: Selector("pushToWrite"),
-                                                                     symbolName: "highlighter")
-            let scanQRButton = self.navigationItem.makeSFSymbolButton(self,
-                                                                      action: Selector("pushToScanQR"),
-                                                                      symbolName: "viewfinder")
-            let notificationButton = self.navigationItem.makeSFSymbolButton(self,
-                                                                            action: Selector("pushToNotification"),
-                                                                            symbolName: "bell")
-                        
-            self.navigationItem.rightBarButtonItems = [notificationButton, scanQRButton, writeButton]
-
+        self.navigationController?.setBackgroundColor()
+        self.navigationController?.navigationBar.isHidden = false
+        self.title = "abc"
+        self.navigationController?.navigationBar.backgroundColor = .red
+        view.backgroundColor = .blue
+        
+        let navLeftItem = UIBarButtonItem(title: "Style",
+                                                  style: .plain,
+                                                  target: self,
+                                                  action: nil)
+        navigationItem.leftBarButtonItem = navLeftItem
+        
     }
 }

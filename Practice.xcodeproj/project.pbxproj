@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B931D1502952B02E002B3F1D /* UITableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B931D14F2952B02E002B3F1D /* UITableHeader.swift */; };
+		B9362CA1299A0829003539B2 /* UIButtonPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9362CA0299A0829003539B2 /* UIButtonPr.swift */; };
+		B9362CA4299A0836003539B2 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9362CA3299A0836003539B2 /* UIButton+.swift */; };
+		B946933729977CAF000E2A9D /* SdwebImagePr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946933629977CAF000E2A9D /* SdwebImagePr.swift */; };
+		B946933A29977CCC000E2A9D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B946933929977CCC000E2A9D /* SDWebImage */; };
+		B946933D29978AE7000E2A9D /* SDWebImageFLPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B946933C29978AE7000E2A9D /* SDWebImageFLPlugin */; };
 		B95BAB042950610B004D6306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95BAB032950610B004D6306 /* AppDelegate.swift */; };
 		B95BAB062950610B004D6306 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95BAB052950610B004D6306 /* SceneDelegate.swift */; };
 		B95BAB0D2950610C004D6306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95BAB0C2950610C004D6306 /* Assets.xcassets */; };
@@ -25,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		B931D14F2952B02E002B3F1D /* UITableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableHeader.swift; sourceTree = "<group>"; };
+		B9362CA0299A0829003539B2 /* UIButtonPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonPr.swift; sourceTree = "<group>"; };
+		B9362CA3299A0836003539B2 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		B946933629977CAF000E2A9D /* SdwebImagePr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdwebImagePr.swift; sourceTree = "<group>"; };
 		B95BAB002950610B004D6306 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95BAB032950610B004D6306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95BAB052950610B004D6306 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B946933D29978AE7000E2A9D /* SDWebImageFLPlugin in Frameworks */,
+				B946933A29977CCC000E2A9D /* SDWebImage in Frameworks */,
 				B9670C4129514FDF00616BC5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9362C9F299A0807003539B2 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				B946933629977CAF000E2A9D /* SdwebImagePr.swift */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		B9362CA2299A082C003539B2 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				B9362CA5299A0858003539B2 /* Utils */,
+				B9362CA0299A0829003539B2 /* UIButtonPr.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		B9362CA5299A0858003539B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B9362CA3299A0836003539B2 /* UIButton+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B95BAAF72950610B004D6306 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				B95BAB112950610C004D6306 /* Info.plist */,
 				B9670C422951507F00616BC5 /* swiftUIData.swift */,
 				B96CFB86298E395600AD16F4 /* UISegmentControl */,
+				B9362C9F299A0807003539B2 /* SDWebImage */,
+				B9362CA2299A082C003539B2 /* UIButton */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -140,6 +177,8 @@
 			name = Practice;
 			packageProductDependencies = (
 				B9670C4029514FDF00616BC5 /* SnapKit */,
+				B946933929977CCC000E2A9D /* SDWebImage */,
+				B946933C29978AE7000E2A9D /* SDWebImageFLPlugin */,
 			);
 			productName = Practice;
 			productReference = B95BAB002950610B004D6306 /* Practice.app */;
@@ -171,6 +210,8 @@
 			mainGroup = B95BAAF72950610B004D6306;
 			packageReferences = (
 				B9670C3F29514FDF00616BC5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B946933829977CCC000E2A9D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				B946933B29978AE7000E2A9D /* XCRemoteSwiftPackageReference "SDWebImageFLPlugin" */,
 			);
 			productRefGroup = B95BAB012950610B004D6306 /* Products */;
 			projectDirPath = "";
@@ -199,12 +240,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9670C3E29514F8700616BC5 /* UITableCell.swift in Sources */,
+				B9362CA4299A0836003539B2 /* UIButton+.swift in Sources */,
 				B9670C432951507F00616BC5 /* swiftUIData.swift in Sources */,
+				B9362CA1299A0829003539B2 /* UIButtonPr.swift in Sources */,
 				B96CFB88298E397900AD16F4 /* UISegmentControl+.swift in Sources */,
 				B95BAB18295061C1004D6306 /* NavigationBarController.swift in Sources */,
 				B95BAB1B295071D5004D6306 /* UINavigationController+.swift in Sources */,
 				B96CFB85298E2B2F00AD16F4 /* UISegmentedControlPr.swift in Sources */,
 				B931D1502952B02E002B3F1D /* UITableHeader.swift in Sources */,
+				B946933729977CAF000E2A9D /* SdwebImagePr.swift in Sources */,
 				B95BAB1E29507A95004D6306 /* UINavigationItem+.swift in Sources */,
 				B95BAB042950610B004D6306 /* AppDelegate.swift in Sources */,
 				B95BAB062950610B004D6306 /* SceneDelegate.swift in Sources */,
@@ -418,6 +462,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B946933829977CCC000E2A9D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B946933B29978AE7000E2A9D /* XCRemoteSwiftPackageReference "SDWebImageFLPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageFLPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
 		B9670C3F29514FDF00616BC5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -429,6 +489,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B946933929977CCC000E2A9D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B946933829977CCC000E2A9D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B946933C29978AE7000E2A9D /* SDWebImageFLPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B946933B29978AE7000E2A9D /* XCRemoteSwiftPackageReference "SDWebImageFLPlugin" */;
+			productName = SDWebImageFLPlugin;
+		};
 		B9670C4029514FDF00616BC5 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B9670C3F29514FDF00616BC5 /* XCRemoteSwiftPackageReference "SnapKit" */;

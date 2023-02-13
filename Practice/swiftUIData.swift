@@ -24,7 +24,7 @@ struct ViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
     // Preview를 보고자 하는 Viewcontroller 이름
     // e.g.)
-        return UISegmentedControlPr()
+        return NavigationBarController()
     }
 }
 
