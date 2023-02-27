@@ -55,34 +55,34 @@ extension UIButton.Configuration{
         
         
         
-        
-        /// TAKE 배경 및 글자색
-        configuration.baseBackgroundColor = .blue
+//
+//        /// TAKE 배경 및 글자색
+        //configuration.baseBackgroundColor = .red
         configuration.baseForegroundColor = .red
-        
+//
         ///  TAKE Main Title
         //방법 1
         configuration.title = style.title
-        
+
         //방법 2
         var AttriTitle = AttributedString.init(style.title!)
-        AttriTitle.font = .systemFont(ofSize: 50, weight: .bold)
+        AttriTitle.font = .systemFont(ofSize: 30, weight: .bold)
         configuration.attributedTitle = AttriTitle
-        
+//
         ///  TAKE SubTitle
         //방법 1
-        configuration.subtitle = "Button"
+        configuration.subtitle = "subTitle"
         //방법 2
-        var AttriSubTitle = AttributedString.init("Button")
-        AttriSubTitle.font = .systemFont(ofSize: 30, weight: .bold)
+        var AttriSubTitle = AttributedString.init("subTitle")
+        AttriSubTitle.font = .systemFont(ofSize: 20, weight: .bold)
         configuration.attributedSubtitle = AttriSubTitle
-
-        
-        /// TAKE  Image
+//
+//
+//        /// TAKE  Image
         configuration.image = UIImage(systemName: "heart")
         configuration.imagePlacement = .top
-
-        
+//
+//
         /// TAKE Button Layout
         configuration.buttonSize = .large
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
