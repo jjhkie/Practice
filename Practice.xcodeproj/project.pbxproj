@@ -31,6 +31,8 @@
 		B9670C432951507F00616BC5 /* swiftUIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C422951507F00616BC5 /* swiftUIData.swift */; };
 		B96CFB85298E2B2F00AD16F4 /* UISegmentedControlPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CFB84298E2B2F00AD16F4 /* UISegmentedControlPr.swift */; };
 		B96CFB88298E397900AD16F4 /* UISegmentControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CFB87298E397900AD16F4 /* UISegmentControl+.swift */; };
+		B988B69029AF07E2002BAF38 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B988B68F29AF07E2002BAF38 /* GoogleService-Info-2.plist */; };
+		B988B69329AF0AEC002BAF38 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B988B69229AF0AEC002BAF38 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,7 @@
 		B9670C422951507F00616BC5 /* swiftUIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIData.swift; sourceTree = "<group>"; };
 		B96CFB84298E2B2F00AD16F4 /* UISegmentedControlPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlPr.swift; sourceTree = "<group>"; };
 		B96CFB87298E397900AD16F4 /* UISegmentControl+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentControl+.swift"; sourceTree = "<group>"; };
+		B988B68F29AF07E2002BAF38 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		C7A662A1E164D086B278E834 /* Pods-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.debug.xcconfig"; path = "Target Support Files/Pods-Practice/Pods-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDE26D7DDB652DF9A9E8F88 /* Pods_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5305E5D0E9A0E86715E07A /* Pods-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.release.xcconfig"; path = "Target Support Files/Pods-Practice/Pods-Practice.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B988B69329AF0AEC002BAF38 /* FirebaseDatabase in Frameworks */,
 				B944074329ACAEAE004822B1 /* Then in Frameworks */,
 				B946933D29978AE7000E2A9D /* SDWebImageFLPlugin in Frameworks */,
 				B946933A29977CCC000E2A9D /* SDWebImage in Frameworks */,
@@ -158,6 +162,7 @@
 				B9670C3C29514F7100616BC5 /* UITableView */,
 				B95BAB19295061DE004D6306 /* UINavigationBar */,
 				B95BAB0C2950610C004D6306 /* Assets.xcassets */,
+				B988B68F29AF07E2002BAF38 /* GoogleService-Info-2.plist */,
 				B95BAB0E2950610C004D6306 /* LaunchScreen.storyboard */,
 				B95BAB112950610C004D6306 /* Info.plist */,
 				B9670C422951507F00616BC5 /* swiftUIData.swift */,
@@ -225,6 +230,7 @@
 				B946933929977CCC000E2A9D /* SDWebImage */,
 				B946933C29978AE7000E2A9D /* SDWebImageFLPlugin */,
 				B944074229ACAEAE004822B1 /* Then */,
+				B988B69229AF0AEC002BAF38 /* FirebaseDatabase */,
 			);
 			productName = Practice;
 			productReference = B95BAB002950610B004D6306 /* Practice.app */;
@@ -259,6 +265,7 @@
 				B946933829977CCC000E2A9D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				B946933B29978AE7000E2A9D /* XCRemoteSwiftPackageReference "SDWebImageFLPlugin" */,
 				B944074129ACAEAE004822B1 /* XCRemoteSwiftPackageReference "Then" */,
+				B988B69129AF0AEC002BAF38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B95BAB012950610B004D6306 /* Products */;
 			projectDirPath = "";
@@ -276,6 +283,7 @@
 			files = (
 				B95BAB102950610C004D6306 /* LaunchScreen.storyboard in Resources */,
 				B95BAB0D2950610C004D6306 /* Assets.xcassets in Resources */,
+				B988B69029AF07E2002BAF38 /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +596,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		B988B69129AF0AEC002BAF38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -610,6 +626,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B9670C3F29514FDF00616BC5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		B988B69229AF0AEC002BAF38 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B988B69129AF0AEC002BAF38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

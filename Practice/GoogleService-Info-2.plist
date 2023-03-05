@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>37802940728-3uvs7c2d5t0mvbcbc0b0mo5d3f74fesc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.37802940728-3uvs7c2d5t0mvbcbc0b0mo5d3f74fesc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjuBZ29TKqDG6i9UowRPA9nwbnKgNkOQw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>37802940728</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hylee.Practice</string>
+	<key>PROJECT_ID</key>
+	<string>practice-21df6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>practice-21df6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:37802940728:ios:64bcd4e1b456ae747289cd</string>
+</dict>
+</plist>
